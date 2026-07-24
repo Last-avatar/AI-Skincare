@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compare Products | Senevi</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" type="image/jpeg" href="assets/images/senevi-logo.jpeg">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand" aria-label="Senevi home">
+      <img src="assets/images/senevi-logo.jpeg" alt="Senevi — Where Love Meets Beauty" class="site-logo">
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="analysis.html">Skin Analysis</a>
+      <a href="marketplace.html" class="active">Marketplace</a>
+      <a href="advisor.html">Beauty Advisor</a>
+      <a href="partners.html">Partner Brands</a>
+      <a href="about.html">About</a>
+      <a href="dashboard.html">Dashboard</a>
+    </div>
+    <div class="nav-cta">
+      <a href="marketplace.html" class="btn btn-ghost btn-sm mobile-hide">Back to Marketplace</a>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Side by Side</span>
+    <h1>Compare your shortlisted products.</h1>
+    <p class="lede">Everything you need to decide, from AI Match to ingredients, in one view.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="compare-table-wrap">
+      <table class="compare">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Hydra-Bloom Serum</th>
+            <th>Overnight Recovery Cream</th>
+            <th>Peptide Renewal Serum</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="hero-cell">Brand</td>
+            <td>Lumière Botanics</td>
+            <td>Vérité Skin</td>
+            <td>Vérité Skin</td>
+          </tr>
+          <tr>
+            <td class="hero-cell">AI Match %</td>
+            <td><div class="dial" data-dial="96" data-size="46"></div></td>
+            <td><div class="dial" data-dial="91" data-size="46"></div></td>
+            <td><div class="dial" data-dial="83" data-size="46"></div></td>
+          </tr>
+          <tr>
+            <td class="hero-cell">Price</td>
+            <td>$42</td>
+            <td>$58</td>
+            <td>$64</td>
+          </tr>
+          <tr>
+            <td class="hero-cell">Rating</td>
+            <td class="stars">★★★★★ 4.8</td>
+            <td class="stars">★★★★★ 4.9</td>
+            <td class="stars">★★★★★ 4.9</td>
+          </tr>
+          <tr>
+            <td class="hero-cell">Suitable Skin Types</td>
+            <td>Combination, Oily</td>
+            <td>Dry, Combination</td>
+            <td>Combination, Sensitive</td>
+          </tr>
+          <tr>
+            <td class="hero-cell">Key Ingredients</td>
+            <td>Hyaluronic acid, Vitamin C, Aloe extract</td>
+            <td>Ceramides, Squalane, Shea butter</td>
+            <td>Matrixyl peptides, Niacinamide, Centella</td>
+          </tr>
+          <tr>
+            <td class="hero-cell">Benefits</td>
+            <td>Hydrating, Brightening, Lightweight</td>
+            <td>Repairing, Barrier-strengthening, Rich</td>
+            <td>Firming, Anti-aging, Smoothing</td>
+          </tr>
+          <tr>
+            <td class="hero-cell"></td>
+            <td><a href="product.html" class="btn btn-primary btn-sm btn-block">View Details</a></td>
+            <td><a href="product.html" class="btn btn-primary btn-sm btn-block">View Details</a></td>
+            <td><a href="product.html" class="btn btn-primary btn-sm btn-block">View Details</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="text-align:center; margin-top:40px;">
+      <a href="marketplace.html" class="btn btn-outline-gold">Add Another Product</a>
+    </div>
+  </div>
+</section>
+
+<div style="height:60px"></div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none; padding-top:0;">
+      <span>© 2026 Senevi. All rights reserved.</span>
+      <span style="display:flex; gap:18px;"><a href="#">Privacy Policy</a><a href="#">Terms & Conditions</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
