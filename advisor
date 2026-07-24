@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beauty Advisor | Senevi</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" type="image/jpeg" href="assets/images/senevi-logo.jpeg">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand" aria-label="Senevi home">
+      <img src="assets/images/senevi-logo.jpeg" alt="Senevi — Where Love Meets Beauty" class="site-logo">
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="analysis.html">Skin Analysis</a>
+      <a href="marketplace.html">Marketplace</a>
+      <a href="advisor.html" class="active">Beauty Advisor</a>
+      <a href="partners.html">Partner Brands</a>
+      <a href="about.html">About</a>
+      <a href="dashboard.html">Dashboard</a>
+    </div>
+    <div class="nav-cta">
+      <a href="analysis.html" class="btn btn-ghost btn-sm mobile-hide">Start Free Scan</a>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Real People, Real Advice</span>
+    <h1>Talk to a certified beauty advisor.</h1>
+    <p class="lede">AI gives you the match — our advisors help you make sense of it.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container advisor-layout">
+
+    <div>
+      <div class="advisor-card reveal">
+        <span class="avatar" style="width:54px; height:54px;">N</span>
+        <div>
+          <h3 style="margin-bottom:2px;">Nadeeka W.</h3>
+          <span class="advisor-status">● Online now</span>
+          <p style="font-size:.82rem; margin-top:4px;">Certified esthetician, 8 years</p>
+        </div>
+      </div>
+      <div class="advisor-card reveal">
+        <span class="avatar" style="width:54px; height:54px;">C</span>
+        <div>
+          <h3 style="margin-bottom:2px;">Chamodi R.</h3>
+          <span class="advisor-status" style="color:var(--gold);">● Available in 20 min</span>
+          <p style="font-size:.82rem; margin-top:4px;">Dermatology-trained skincare consultant</p>
+        </div>
+      </div>
+
+      <div class="mission-card reveal" style="margin-top:24px;">
+        <span class="eyebrow">Book a 1:1</span>
+        <h3 style="margin:12px 0 8px;">Video Consultation</h3>
+        <p style="margin-bottom:18px; font-size:.9rem;">15 minutes, free with any completed skin analysis. We'll walk through your results together.</p>
+        <button class="btn btn-primary btn-block" data-toast="Consultation request sent — check your email for a time slot.">Book Consultation</button>
+      </div>
+    </div>
+
+    <div>
+      <div class="chat-window reveal">
+        <div class="chat-messages" id="chatMessages">
+          <div class="msg bot">Hi! I'm Nadeeka, your beauty advisor. I can see you're combination skin with mild dehydration — what would you like help with today?</div>
+        </div>
+        <form id="chatForm" class="chat-input-row">
+          <input type="text" id="chatInput" placeholder="Ask about routines, ingredients, or your results…" autocomplete="off">
+          <button type="submit" class="btn btn-primary btn-sm">Send</button>
+        </form>
+      </div>
+      <div class="chip-row" style="margin-top:16px;">
+        <button class="chip" data-quickask>What order should I apply my products?</button>
+        <button class="chip" data-quickask>Is retinol safe for my skin type?</button>
+        <button class="chip" data-quickask>How do I fix uneven tone?</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div style="height:60px"></div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none; padding-top:0;">
+      <span>© 2026 Senevi. All rights reserved.</span>
+      <span style="display:flex; gap:18px;"><a href="#">Privacy Policy</a><a href="#">Terms & Conditions</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
