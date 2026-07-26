@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Marketplace | Senevi</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" type="image/jpeg" href="assets/images/senevi-logo.jpeg">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand" aria-label="Senevi home">
+      <img src="assets/images/senevi-logo.jpeg" alt="Senevi — Where Love Meets Beauty" class="site-logo">
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="analysis.html">Skin Analysis</a>
+      <a href="marketplace.html" class="active">Marketplace</a>
+      <a href="advisor.html">Beauty Advisor</a>
+      <a href="partners.html">Partner Brands</a>
+      <a href="about.html">About</a>
+      <a href="dashboard.html">Dashboard</a>
+    </div>
+    <div class="nav-cta">
+      <a href="analysis.html" class="btn btn-ghost btn-sm mobile-hide">Re-scan Skin</a>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Step 3 of 3 · Recommended For You</span>
+    <h1>Products matched to your combination skin.</h1>
+    <p class="lede">Ranked by AI Match — pulled from every partner brand, not just ours.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container market-layout">
+
+    <aside class="filters">
+      <div class="filter-group">
+        <div class="filter-title">Skin Type</div>
+        <div class="chip-row">
+          <button class="chip active" data-group="skinType" data-value="all">All</button>
+          <button class="chip" data-group="skinType" data-value="combination">Combination</button>
+          <button class="chip" data-group="skinType" data-value="oily">Oily</button>
+          <button class="chip" data-group="skinType" data-value="dry">Dry</button>
+          <button class="chip" data-group="skinType" data-value="sensitive">Sensitive</button>
+        </div>
+      </div>
+      <div class="filter-group">
+        <div class="filter-title">Skin Concern</div>
+        <div class="chip-row">
+          <button class="chip active" data-group="concern" data-value="all">All</button>
+          <button class="chip" data-group="concern" data-value="hydration">Hydration</button>
+          <button class="chip" data-group="concern" data-value="tone">Uneven Tone</button>
+          <button class="chip" data-group="concern" data-value="lines">Fine Lines</button>
+          <button class="chip" data-group="concern" data-value="breakouts">Breakouts</button>
+        </div>
+      </div>
+      <div class="filter-group">
+        <div class="filter-title">Brand</div>
+        <div class="chip-row">
+          <button class="chip active" data-group="brand" data-value="all">All</button>
+          <button class="chip" data-group="brand" data-value="lumiere">Lumière Botanics</button>
+          <button class="chip" data-group="brand" data-value="verite">Vérité Skin</button>
+          <button class="chip" data-group="brand" data-value="terra">Terra Derma</button>
+          <button class="chip" data-group="brand" data-value="aurelle">Aurelle Paris</button>
+          <button class="chip" data-group="brand" data-value="neroli">Neroli & Oat</button>
+        </div>
+      </div>
+      <div class="filter-group">
+        <div class="filter-title">Max Price</div>
+        <input type="range" id="priceRange" min="15" max="90" value="90">
+        <div class="range-row"><span>Up to</span><b id="priceRangeLabel" style="color:var(--forest)">$90</b></div>
+      </div>
+    </aside>
+
+    <div>
+      <div class="results-topbar">
+        <span style="color:var(--ink-soft); font-size:.9rem;"><b id="resultCount" style="color:var(--forest);">8</b> products matched to you</span>
+        <select class="select-sm">
+          <option>Sort by: Best Match</option>
+          <option>Sort by: Price — Low to High</option>
+          <option>Sort by: Price — High to Low</option>
+          <option>Sort by: Rating</option>
+        </select>
+      </div>
+
+      <div class="grid-3" id="productGrid">
+
+        <!-- Product 1 -->
+        <a href="product.html" class="product-card" data-product data-skintype="combination" data-concern="hydration,tone" data-brand="lumiere" data-price="42">
+          <div class="product-media">
+            <div class="match-dial" data-dial="96" data-size="52"></div>
+            <svg viewBox="0 0 100 100"><path d="M40 25h20v8h4a3 3 0 013 3v42a3 3 0 01-3 3H36a3 3 0 01-3-3V36a3 3 0 013-3h4v-8z" fill="none" stroke="#1B3A2B" stroke-width="1.6"/><line x1="33" y1="46" x2="67" y2="46" stroke="#1B3A2B" stroke-width="1.2"/></svg>
+          </div>
+          <div class="product-body">
+            <span class="product-brand">Lumière Botanics</span>
+            <span class="product-name">Hydra-Bloom Serum</span>
+            <div class="product-benefits"><span class="pill">Hydrating</span><span class="pill">Brightening</span></div>
+            <div class="product-meta"><span class="price">$42</span><span class="stars">★★★★★ 4.8</span></div>
+          </div>
+          <div class="product-actions">
+            <span class="btn btn-outline-gold btn-sm btn-block">View Details</span>
+            <span class="btn btn-primary btn-sm btn-block" data-toast="Added to cart — Hydra-Bloom Serum">Buy Now</span>
+          </div>
+        </a>
+
+        <!-- Product 2 -->
+        <a href="product.html" class="product-card" data-product data-skintype="dry" data-concern="hydration,lines" data-brand="verite" data-price="58">
+          <div class="product-media">
+            <div class="match-dial" data-dial="91" data-size="52"></div>
+            <svg viewBox="0 0 100 100"><rect x="32" y="34" width="36" height="40" rx="8" fill="none" stroke="#1B3A2B" stroke-width="1.6"/><rect x="38" y="24" width="24" height="12" rx="4" fill="none" stroke="#1B3A2B" stroke-width="1.6"/></svg>
+          </div>
+          <div class="product-body">
+            <span class="product-brand">Vérité Skin</span>
+            <span class="product-name">Overnight Recovery Cream</span>
+            <div class="product-benefits"><span class="pill">Repairing</span><span class="pill">Anti-aging</span></div>
+            <div class="product-meta"><span class="price">$58</span><span class="stars">★★★★★ 4.9</span></div>
+          </div>
+          <div class="product-actions">
+            <span class="btn btn-outline-gold btn-sm btn-block">View Details</span>
+            <span class="btn btn-primary btn-sm btn-block" data-toast="Added to cart — Overnight Recovery Cream">Buy Now</span>
+          </div>
+        </a>
+
+        <!-- Product 3 -->
+        <a href="product.html" class="product-card" data-product data-skintype="oily" data-concern="breakouts" data-brand="terra" data-price="28">
+          <div class="product-media">
+            <div class="match-dial" data-dial="88" data-size="52"></div>
+            <svg viewBox="0 0 100 100"><path d="M50 22c8 8 18 20 18 32a18 18 0 01-36 0c0-12 10-24 18-32z" fill="none" stroke="#1B3A2B" stroke-width="1.6"/></svg>
+          </div>
+          <div class="product-body">
+            <span class="product-brand">Terra Derma</span>
+            <span class="product-name">Clear Clay Cleanser</span>
+            <div class="product-benefits"><span class="pill">Purifying</span><span class="pill">Oil-control</span></div>
+            <div class="product-meta"><span class="price">$28</span><span class="stars">★★★★☆ 4.6</span></div>
+          </div>
+          <div class="product-actions">
+            <span class="btn btn-outline-gold btn-sm btn-block">View Details</span>
+            <span class="btn btn-primary btn-sm btn-block" data-toast="Added to cart — Clear Clay Cleanser">Buy Now</span>
+          </div>
+        </a>
+
+        <!-- Product 4 -->
+        <a href="product.html" class="product-card" data-product data-skintype="sensitive" data-concern="tone,breakouts" data-brand="aurelle" data-price="36">
+          <div class="product-media">
+            <div class="match-dial" data-dial="85" data-size="52"></div>
+            <svg viewBox="0 0 100 100"><path d="M34 70V38a6 6 0 016-6h20a6 6 0 016 6v32" fill="none" stroke="#1B3A2B" stroke-width="1.6"/><rect x="34" y="70" width="32" height="8" rx="2" fill="none" stroke="#1B3A2B" stroke-width="1.6"/><circle cx="50" cy="32" r="4" fill="none" stroke="#9C3B52" stroke-width="1.4"/></svg>
+          </div>
+          <div class="product-body">
+            <span class="product-brand">Aurelle Paris</span>
+            <span class="product-name">Calm Rose Essence Toner</span>
+            <div class="product-benefits"><span class="pill">Soothing</span><span class="pill">Calming</span></div>
+            <div class="product-meta"><span class="price">$36</span><span class="stars">★★★★★ 4.7</span></div>
+          </div>
+          <div class="product-actions">
+            <span class="btn btn-outline-gold btn-sm btn-block">View Details</span>
+            <span class="btn btn-primary btn-sm btn-block" data-toast="Added to cart — Calm Rose Essence Toner">Buy Now</span>
+          </div>
+        </a>
+
+        <!-- Product 5 -->
+        <a href="product.html" class="product-card" data-product data-skintype="combination" data-concern="breakouts,tone" data-brand="neroli" data-price="24">
+          <div class="product-media">
+            <div class="match-dial" data-dial="90" data-size="52"></div>
+            <svg viewBox="0 0 100 100"><path d="M40 25h20v8h4a3 3 0 013 3v42a3 3 0 01-3 3H36a3 3 0 01-3-3V36a3 3 0 013-3h4v-8z" fill="none" stroke="#1B3A2B" stroke-width="1.6"/></svg>
+          </div>
+          <div class="product-body">
+            <span class="product-brand">Neroli & Oat</span>
+            <span class="product-name">Niacinamide 10% Concentrate</span>
+            <div class="product-benefits"><span class="pill">Pore-refining</span><span class="pill">Balancing</span></div>
+            <div class="product-meta"><span class="price">$24</span><span class="stars">★★★★★ 4.8</span></div>
+          </div>
+          <div class="product-actions">
+            <span class="btn btn-outline-gold btn-sm btn-block">View Details</span>
+            <span class="btn btn-primary btn-sm btn-block" data-toast="Added to cart — Niacinamide 10% Concentrate">Buy Now</span>
+          </div>
+        </a>
+
+        <!-- Product 6 -->
+        <a href="product.html" class="product-card" data-product data-skintype="dry" data-concern="hydration" data-brand="lumiere" data-price="52">
+          <div class="product-media">
+            <div class="match-dial" data-dial="87" data-size="52"></div>
+            <svg viewBox="0 0 100 100"><rect x="32" y="34" width="36" height="40" rx="8" fill="none" stroke="#1B3A2B" stroke-width="1.6"/><rect x="38" y="24" width="24" height="12" rx="4" fill="none" stroke="#1B3A2B" stroke-width="1.6"/></svg>
+          </div>
+          <div class="product-body">
+            <span class="product-brand">Lumière Botanics</span>
+            <span class="product-name">Deep Hydration Barrier Balm</span>
+            <div class="product-benefits"><span class="pill">Barrier-repair</span><span class="pill">Rich</span></div>
+            <div class="product-meta"><span class="price">$52</span><span class="stars">★★★★☆ 4.5</span></div>
+          </div>
+          <div class="product-actions">
+            <span class="btn btn-outline-gold btn-sm btn-block">View Details</span>
+            <span class="btn btn-primary btn-sm btn-block" data-toast="Added to cart — Deep Hydration Barrier Balm">Buy Now</span>
+          </div>
+        </a>
+
+        <!-- Product 7 -->
+        <a href="product.html" class="product-card" data-product data-skintype="combination" data-concern="lines" data-brand="verite" data-price="64">
+          <div class="product-media">
+            <div class="match-dial" data-dial="83" data-size="52"></div>
+            <svg viewBox="0 0 100 100"><path d="M40 25h20v8h4a3 3 0 013 3v42a3 3 0 01-3 3H36a3 3 0 01-3-3V36a3 3 0 013-3h4v-8z" fill="none" stroke="#1B3A2B" stroke-width="1.6"/></svg>
+          </div>
+          <div class="product-body">
+            <span class="product-brand">Vérité Skin</span>
+            <span class="product-name">Peptide Renewal Serum</span>
+            <div class="product-benefits"><span class="pill">Firming</span><span class="pill">Anti-aging</span></div>
+            <div class="product-meta"><span class="price">$64</span><span class="stars">★★★★★ 4.9</span></div>
+          </div>
+          <div class="product-actions">
+            <span class="btn btn-outline-gold btn-sm btn-block">View Details</span>
+            <span class="btn btn-primary btn-sm btn-block" data-toast="Added to cart — Peptide Renewal Serum">Buy Now</span>
+          </div>
+        </a>
+
+        <!-- Product 8 -->
+        <a href="product.html" class="product-card" data-product data-skintype="sensitive" data-concern="hydration,tone" data-brand="terra" data-price="19">
+          <div class="product-media">
+            <div class="match-dial" data-dial="80" data-size="52"></div>
+            <svg viewBox="0 0 100 100"><path d="M34 70V38a6 6 0 016-6h20a6 6 0 016 6v32" fill="none" stroke="#1B3A2B" stroke-width="1.6"/><rect x="34" y="70" width="32" height="8" rx="2" fill="none" stroke="#1B3A2B" stroke-width="1.6"/></svg>
+          </div>
+          <div class="product-body">
+            <span class="product-brand">Terra Derma</span>
+            <span class="product-name">Oat Milk Soothing Mist</span>
+            <div class="product-benefits"><span class="pill">Gentle</span><span class="pill">Calming</span></div>
+            <div class="product-meta"><span class="price">$19</span><span class="stars">★★★★☆ 4.4</span></div>
+          </div>
+          <div class="product-actions">
+            <span class="btn btn-outline-gold btn-sm btn-block">View Details</span>
+            <span class="btn btn-primary btn-sm btn-block" data-toast="Added to cart — Oat Milk Soothing Mist">Buy Now</span>
+          </div>
+        </a>
+
+      </div>
+
+      <div style="text-align:center; margin-top:40px;">
+        <a href="compare.html" class="btn btn-ghost">Compare Selected Products</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div style="height:60px"></div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none; padding-top:0;">
+      <span>© 2026 Senevi. All rights reserved.</span>
+      <span style="display:flex; gap:18px;"><a href="#">Privacy Policy</a><a href="#">Terms & Conditions</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
