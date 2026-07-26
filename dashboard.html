@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Dashboard | Senevi</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" type="image/jpeg" href="assets/images/senevi-logo.jpeg">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand" aria-label="Senevi home">
+      <img src="assets/images/senevi-logo.jpeg" alt="Senevi — Where Love Meets Beauty" class="site-logo">
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="analysis.html">Skin Analysis</a>
+      <a href="marketplace.html">Marketplace</a>
+      <a href="advisor.html">Beauty Advisor</a>
+      <a href="partners.html">Partner Brands</a>
+      <a href="about.html">About</a>
+      <a href="dashboard.html" class="active">Dashboard</a>
+    </div>
+    <div class="nav-cta">
+      <span class="avatar mobile-hide" style="width:36px; height:36px;">R</span>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero" style="text-align:left;">
+  <div class="container" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;">
+    <div>
+      <span class="eyebrow">Welcome back</span>
+      <h1 style="margin-top:10px;">Hi, here's your skin journey.</h1>
+    </div>
+    <a href="analysis.html" class="btn btn-primary">New Skin Analysis</a>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container dash-layout">
+
+    <nav class="dash-nav">
+      <a href="#overview" class="active">Overview</a>
+      <a href="#analyses">Skin Analyses</a>
+      <a href="#favourites">Favourites</a>
+      <a href="#routines">Saved Routines</a>
+      <a href="#orders">Order History</a>
+      <a href="#recs">AI Recommendations</a>
+      <a href="#tracker">Improvement Tracker</a>
+    </nav>
+
+    <div>
+      <div id="overview" class="dash-section">
+        <div class="grid-4">
+          <div class="stat-card reveal"><div class="stat-value">4</div><div class="stat-label">Skin analyses completed</div></div>
+          <div class="stat-card reveal"><div class="stat-value">12</div><div class="stat-label">Favourite products</div></div>
+          <div class="stat-card reveal"><div class="stat-value">3</div><div class="stat-label">Saved routines</div></div>
+          <div class="stat-card reveal"><div class="stat-value">+18%</div><div class="stat-label">Hydration improvement</div></div>
+        </div>
+      </div>
+
+      <div id="analyses" class="dash-section">
+        <h2>Previous Skin Analyses</h2>
+        <div class="timeline-row reveal">
+          <div class="timeline-dot"></div>
+          <div style="flex:1; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+            <div><b style="color:var(--forest);">July 20, 2026</b><p style="font-size:.85rem;">Combination · Hydration 58% · Confidence 92%</p></div>
+            <a href="results.html" class="btn btn-outline-gold btn-sm">View Report</a>
+          </div>
+        </div>
+        <div class="timeline-row reveal">
+          <div class="timeline-dot"></div>
+          <div style="flex:1; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+            <div><b style="color:var(--forest);">June 2, 2026</b><p style="font-size:.85rem;">Combination · Hydration 46% · Confidence 89%</p></div>
+            <a href="results.html" class="btn btn-outline-gold btn-sm">View Report</a>
+          </div>
+        </div>
+        <div class="timeline-row reveal">
+          <div class="timeline-dot"></div>
+          <div style="flex:1; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+            <div><b style="color:var(--forest);">April 14, 2026</b><p style="font-size:.85rem;">Oily · Hydration 38% · Confidence 85%</p></div>
+            <a href="results.html" class="btn btn-outline-gold btn-sm">View Report</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="favourites" class="dash-section">
+        <h2>Favourite Products</h2>
+        <div class="grid-3">
+          <a href="product.html" class="product-card reveal">
+            <div class="product-media"><div class="match-dial" data-dial="96" data-size="46"></div><svg viewBox="0 0 100 100" style="width:44%"><path d="M40 25h20v8h4a3 3 0 013 3v42a3 3 0 01-3 3H36a3 3 0 01-3-3V36a3 3 0 013-3h4v-8z" fill="none" stroke="#1B3A2B" stroke-width="1.6"/></svg></div>
+            <div class="product-body"><span class="product-brand">Lumière Botanics</span><span class="product-name">Hydra-Bloom Serum</span><div class="product-meta"><span class="price">$42</span><span class="stars">★★★★★</span></div></div>
+          </a>
+          <a href="product.html" class="product-card reveal">
+            <div class="product-media"><div class="match-dial" data-dial="91" data-size="46"></div><svg viewBox="0 0 100 100" style="width:44%"><rect x="32" y="34" width="36" height="40" rx="8" fill="none" stroke="#1B3A2B" stroke-width="1.6"/></svg></div>
+            <div class="product-body"><span class="product-brand">Vérité Skin</span><span class="product-name">Overnight Recovery Cream</span><div class="product-meta"><span class="price">$58</span><span class="stars">★★★★★</span></div></div>
+          </a>
+          <a href="product.html" class="product-card reveal">
+            <div class="product-media"><div class="match-dial" data-dial="90" data-size="46"></div><svg viewBox="0 0 100 100" style="width:44%"><path d="M40 25h20v8h4a3 3 0 013 3v42a3 3 0 01-3 3H36a3 3 0 01-3-3V36a3 3 0 013-3h4v-8z" fill="none" stroke="#1B3A2B" stroke-width="1.6"/></svg></div>
+            <div class="product-body"><span class="product-brand">Neroli & Oat</span><span class="product-name">Niacinamide Concentrate</span><div class="product-meta"><span class="price">$24</span><span class="stars">★★★★★</span></div></div>
+          </a>
+        </div>
+      </div>
+
+      <div id="routines" class="dash-section">
+        <h2>Saved Routines</h2>
+        <div class="result-card reveal">
+          <span class="eyebrow">Morning Routine</span>
+          <p style="margin-top:10px; color:var(--ink);">Oat Milk Soothing Mist → Hydra-Bloom Serum → Deep Hydration Barrier Balm → SPF 50</p>
+        </div>
+        <div class="result-card reveal" style="margin-top:16px;">
+          <span class="eyebrow">Evening Routine</span>
+          <p style="margin-top:10px; color:var(--ink);">Clear Clay Cleanser → Calm Rose Essence Toner → Peptide Renewal Serum → Overnight Recovery Cream</p>
+        </div>
+      </div>
+
+      <div id="orders" class="dash-section">
+        <h2>Order History</h2>
+        <div class="compare-table-wrap">
+          <table class="compare">
+            <thead><tr><th>Order</th><th>Product</th><th>Date</th><th>Status</th><th>Total</th></tr></thead>
+            <tbody>
+              <tr><td class="hero-cell">#SV-1042</td><td>Hydra-Bloom Serum</td><td>Jul 21, 2026</td><td>Delivered</td><td>$42.00</td></tr>
+              <tr><td class="hero-cell">#SV-0988</td><td>Overnight Recovery Cream</td><td>Jun 5, 2026</td><td>Delivered</td><td>$58.00</td></tr>
+              <tr><td class="hero-cell">#SV-0871</td><td>Oat Milk Soothing Mist</td><td>Apr 16, 2026</td><td>Delivered</td><td>$19.00</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div id="recs" class="dash-section">
+        <h2>AI Recommendations For You</h2>
+        <p style="margin-bottom:16px;">Based on your July analysis, your hydration score has room to grow. Here's what we'd add next:</p>
+        <div class="grid-3">
+          <a href="product.html" class="product-card reveal">
+            <div class="product-media"><div class="match-dial" data-dial="93" data-size="46"></div><svg viewBox="0 0 100 100" style="width:44%"><circle cx="50" cy="50" r="26" fill="none" stroke="#9C3B52" stroke-width="1.6"/></svg></div>
+            <div class="product-body"><span class="product-brand">Aurelle Paris</span><span class="product-name">Calm Rose Essence Toner</span><div class="product-meta"><span class="price">$36</span><span class="stars">★★★★★</span></div></div>
+          </a>
+        </div>
+      </div>
+
+      <div id="tracker" class="dash-section">
+        <h2>Skin Improvement Tracker</h2>
+        <div class="result-card reveal">
+          <div class="summary-bars">
+            <div class="bar-row"><span>Apr 2026</span><div class="bar-track"><div class="bar-fill" style="width:38%"></div></div></div>
+            <div class="bar-row"><span>Jun 2026</span><div class="bar-track"><div class="bar-fill" style="width:46%"></div></div></div>
+            <div class="bar-row"><span>Jul 2026</span><div class="bar-track"><div class="bar-fill" style="width:58%"></div></div></div>
+          </div>
+          <p style="margin-top:14px; font-size:.85rem;">Hydration score across your last three scans — up 20 points since April.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div style="height:40px"></div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none; padding-top:0;">
+      <span>© 2026 Senevi. All rights reserved.</span>
+      <span style="display:flex; gap:18px;"><a href="#">Privacy Policy</a><a href="#">Terms & Conditions</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
